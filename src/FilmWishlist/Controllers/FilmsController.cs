@@ -16,6 +16,13 @@ namespace FilmWishlist.Controllers
             _descriptionService = descriptionService;
         }
 
+        [HttpGet]
+        [Route("List")]
+        public ActionResult List(string status) => View("FilmList", new FilmListViewModel()
+        {
+            Films = _addFilmService.GetWishlist()
+        });
+
         [HttpPost]
         [Route("Add")]
         public ActionResult Add(string title, int year) => Redirect(_addFilmService.AddFilm(title, year) == AddFilmResult.Successful ? "/" : "/?status=failedtoadd");

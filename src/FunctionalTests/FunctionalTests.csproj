@@ -48,10 +48,13 @@
     <Compile Include="ApplicationSetup.cs" />
     <Compile Include="BrowserContext.cs" />
     <Compile Include="DetailsPage\DetailsPageTests.cs" />
+    <Compile Include="FilmPage\FilmPageTests.cs" />
     <Compile Include="HomePage\AddFilmOnHomepageTests.cs" />
+    <Compile Include="HomePage\FilmListIsVisibleOnFilmPage.cs" />
     <Compile Include="HomePage\FilmListIsVisibleOnHomepageTests.cs" />
     <Compile Include="PageModel\DetailsPage.cs" />
     <Compile Include="PageModel\FilmWishlistSite.cs" />
+    <Compile Include="PageModel\Filmpage.cs" />
     <Compile Include="PageModel\Homepage.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
