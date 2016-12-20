@@ -5,7 +5,7 @@ namespace TestHelpers
 {
     public class SqlHelper
     {
-        private const string ConnectionString = "Data Source=.;Initial Catalog=Films;Integrated Security=True";
+        private const string ConnectionString = "Data Source=ES00843\\SQLSERVER2014;Initial Catalog=Films;Integrated Security=True";
 
         public static void TruncateFilmsTable()
         {

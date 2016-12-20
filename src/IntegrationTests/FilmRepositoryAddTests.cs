@@ -15,7 +15,7 @@ namespace IntegrationTests
         {
             SqlHelper.TruncateFilmsTable();
 
-            _repository = new FilmRepository("Data Source=.;Initial Catalog=Films;Integrated Security=True");
+            _repository = new FilmRepository("Data Source=ES00843\\SQLSERVER2014;Initial Catalog=Films;Integrated Security=True");
         }
 
         [Test]
